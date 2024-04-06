@@ -19,18 +19,44 @@
 
   <body>
     <header>
-      <a href="#"><img src="img/logo.svg" alt="Company Name Logo" /></a>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Classes</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Schedule</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <span>☎</span>
-      <address><a href="tel:+12345678900">+1 (234) 567 89 00</a></address>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-nav.partial.html"
+      ></nav>
+      <a
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-logo.partial.html"
+      ></a>
+      <address
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-address.partial.html"
+      ></address>
     </header>
+    <main></main>
+    <footer>
+      <a
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-logo.partial.html"
+      ></a>
+      <p
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-title.partial.html"
+      ></p>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-nav.partial.html"
+      ></nav>
+      <p
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-description.partial.html"
+      ></p>
+    </footer>
   </body>
 </html>
