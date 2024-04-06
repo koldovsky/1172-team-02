@@ -19,7 +19,11 @@
 
   <body>
     <header>
-        
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="schedule.header-hero.partial.html"
+      ></div>
     </header>
     <main>
       <section
@@ -28,8 +32,6 @@
         data-hx-get="schedule.schedule.partial.html"
       ></section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
