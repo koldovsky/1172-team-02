@@ -1,62 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/index.css">
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-nav.partial.html"
-      ></nav>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-logo.partial.html"
-      ></div>
-      <address
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-address.partial.html"
-      ></address>
-    </header>
-    <main></main>
-    <footer>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-logo.partial.html"
-      ></div>
-      <p
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.footer-title.partial.html"
-      ></p>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-nav.partial.html"
-      ></nav>
-      <p
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.footer-description.partial.html"
-      ></p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header__logo-container" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="common.header-logo.partial.html"></div>
+    <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="common.header-nav.partial.html"></nav>
+    <address class="header__address" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="common.header-address.partial.html"></address>
+    <div class="index__header-hero" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="index.header-hero.partial.html"></div>
+  </header>
+  <main></main>
+  <footer>
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-logo.partial.html"></div>
+    <p data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.footer-title.partial.html"></p>
+    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-nav.partial.html"></nav>
+    <p data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.footer-description.partial.html"></p>
+  </footer>
+</body>
+
 </html>
