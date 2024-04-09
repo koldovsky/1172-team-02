@@ -16,22 +16,62 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <header class="header">
-      <div class="schedule-header"
+      <div
+        class="header__logo-container"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-logo.partial.html"
+      ></div>
+      <nav
+        class="header__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-nav.partial.html"
+      ></nav>
+      <address
+        class="header__address"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-address.partial.html"
+      ></address>
+      <div
+        class="schedule-header"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="schedule.header-hero.partial.html"
       ></div>
     </header>
     <main class="main">
-      <section class="schedule"
+      <section
+        class="schedule"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="schedule.schedule.partial.html"
       ></section>
     </main>
-    <footer></footer>
+    <footer>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-logo.partial.html"
+      ></div>
+      <p
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-title.partial.html"
+      ></p>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-nav.partial.html"
+      ></nav>
+      <p
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-description.partial.html"
+      ></p>
+    </footer>
   </body>
 </html>
