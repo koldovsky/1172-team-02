@@ -2,5 +2,13 @@
     padding: 75px 0 85px;
     background-color: var(--header-nav-text-color);
 }
+.schedule-header__title {
+    font-size: 30px;
+    text-align: center;
+    
+}
+.schedule-header__description {
+    font-size: 11px;
+    text-align: center;}
 
 
