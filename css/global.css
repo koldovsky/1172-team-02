@@ -9,7 +9,11 @@
 :root {
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
+  --header-nav-text-color: rgba(47, 53, 71, 0.7);
+  --footer-nav-text-color: #5995c5;
+  --footer-paragraph-color: rgba(255, 255, 255, 0.6);
 }
+
 h1,
 h2,
 h3,
@@ -20,4 +24,9 @@ h4 {
 img {
   display: block;
   width: 100%;
+}
+
+.header{
+  padding:30px 40px;
+  display: flex;
 }
