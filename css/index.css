@@ -1,4 +1,5 @@
 @import "global.css";
 @import "common.header-nav.css";
 @import "common.header-logo.css";
-@import "common.header-address.css"
+@import "common.header-address.css";
+@import "index.news.css"
