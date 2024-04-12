@@ -9,6 +9,8 @@
     
 }
 .schedule-header__description {
+    text-decoration: none;
+    color: var(--schedule-text-color);
     font-size: 11px;
     text-align: center;}
 
