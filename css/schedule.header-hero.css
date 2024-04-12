@@ -1,3 +1,6 @@
+.header {
+    padding: 0;
+}
 .schedule-header {
     padding: 75px 0 85px;
     background-color: var(--schedule-accent-color);
@@ -12,6 +15,11 @@
     text-decoration: none;
     color: var(--schedule-text-color);
     font-size: 11px;
-    text-align: center;}
+    text-align: center;
+    .schedule-header__description-link {
+        text-decoration: underline;
+    }
+    
+}
 
 
