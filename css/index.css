@@ -2,4 +2,8 @@
 @import "common.header-nav.css";
 @import "common.header-logo.css";
 @import "common.header-address.css";
-@import "index.news.css"
+@import "index.news.css";
+@import "pricing.css";
+@import "main-page.training.css";
+@import "main-page.join-us.css";
+@import "main-page.classes.css";
