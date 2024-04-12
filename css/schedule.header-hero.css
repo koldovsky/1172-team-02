@@ -1,6 +1,7 @@
 .schedule-header {
     padding: 75px 0 85px;
-    background-color: var(--header-nav-text-color);
+    background-color: var(--schedule-accent-color);
+    
 }
 .schedule-header__title {
     font-size: 30px;
