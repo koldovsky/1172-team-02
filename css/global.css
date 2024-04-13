@@ -14,6 +14,8 @@
   --footer-paragraph-color: rgba(255, 255, 255, 0.6);
   --footer-background-color:#2f3547;
   --footer-copyright-background-color:rgb(41, 46, 63);
+  --schedule-accent-color: #f3f5e9;
+  --schedule-text-color: rgba(114, 118, 130, 0.69);
 }
 
 h1,
@@ -28,3 +30,16 @@ img {
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.header{
+  padding:30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+>>>>>>> df759d4d913222f25d2cb7cd27bd6acd5d79d3c3
