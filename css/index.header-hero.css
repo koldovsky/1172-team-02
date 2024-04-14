@@ -1,0 +1,8 @@
+.index-header-hero {
+    background-color: var(--header-hero-background-color-info);
+}
+.index-header-hero__title {
+    font-size: 11px;
+    color: var(--footer-nav-text-color);
+    font-weight: bold;
+}

@@ -1,8 +1,9 @@
 @import "global.css";
-@import "common.header-nav.css";
+@import "common.header.css";
 @import "common.header-logo.css";
 @import "common.header-address.css";
 @import "common-footer.css";
+@import "index.header-hero.css";
 @import "index.news.css";
 @import "pricing.css";
 @import "main-page.training.css";

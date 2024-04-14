@@ -16,20 +16,25 @@
   --footer-copyright-background-color:rgb(41, 46, 63);
   --schedule-accent-color: #f3f5e9;
   --schedule-text-color: rgba(114, 118, 130, 0.69);
+  --header-hero-background-color-info: #dceafd;
 }
 
-h1,
 h2,
 h3,
 h4 {
   font-family: "Marcellus", serif;
 }
+p {
+  font-family: "Open Sans", sans-serif;
+} 
 
 img {
   display: block;
   width: 100%;
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   max-width: 1200px;
   margin: auto;
