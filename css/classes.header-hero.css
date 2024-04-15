@@ -1,6 +1,22 @@
 .classes {
-    background-color: var(--header-hero-background-color-info);
+  background-color: var(--header-hero-background-color-info);
+  height: 200px;
 }
+
 .classes__page-title {
-    font-weight: 100;
+  font-weight: 200;
+  text-align: center;
+  margin: 40px;
+  padding: 40px;
+}
+
+.classes__nav {
+  color: var(--schedule-text-color);
+  text-align: center;
+  font-size: 11px;
+
+ span {
+    color: var(--schedule-text-color);
+    text-decoration: underline;
+}  
 }

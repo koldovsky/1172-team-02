@@ -18,13 +18,13 @@
   --schedule-text-color: rgba(114, 118, 130, 0.69);
   --header-hero-background-color-info: #dceafd;
 }
-
+h1,
 h2,
 h3,
 h4 {
   font-family: "Marcellus", serif;
 }
-h1,
+
 p {
   font-family: "Open Sans", sans-serif;
 }
