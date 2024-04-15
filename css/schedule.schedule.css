@@ -4,5 +4,7 @@
 }
 
 .schedule__title {
-    
+    font-family: "Open Sans";
+    text-align: center;
+    color: var(--footer-nav-text-color);
 }

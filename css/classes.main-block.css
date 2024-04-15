@@ -1,0 +1,9 @@
+.classes__list {
+  display: grid;
+  gap: 5px;
+}
+@media (min-width: 990px) {
+    .classes__list {
+        grid-template-columns: 1fr 1fr;
+    }
+}

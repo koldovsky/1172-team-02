@@ -1,0 +1,19 @@
+.container-header-hero {
+  background-color: var(--header-hero-background-color-info);
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+}
+
+.index-header-hero__title {
+  font-size: 11px;
+  color: var(--footer-nav-text-color);
+  font-weight: bold;
+}
+
+@media (min-width: 990px) {
+  .index-header-hero {
+    display: flex;
+    flex-direction: row;
+  }
+}
