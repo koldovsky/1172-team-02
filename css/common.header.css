@@ -1,14 +1,14 @@
-/* .header {
+.header {
   padding: 30px 40px;
   display: flex;
   flex-direction: column;
-} */
+}
 
 .header__image {
   width: 101px;
   height: 50px;
 }
-
+/* 
 .header__address-link {
   text-decoration: underline;
   font-weight: bold;
@@ -35,4 +35,4 @@
 .navbar-menu {
     display: flex;
     flex: 1;
-  }
+  } */
