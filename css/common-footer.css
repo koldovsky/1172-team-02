@@ -18,7 +18,7 @@
     width: 100%;
     justify-content: center;
     align-content: space-around;
-    padding:15px 32px;
+    padding: 15px 32px;
 }
 
 .footer__copyright-text,
@@ -58,6 +58,7 @@
 
 .social-copyright-container {
     justify-content: space-between;
+    border-top:0.05px solid #FFFF;
 }
 
 .footer__description-text,
@@ -73,15 +74,16 @@
 .footer__menu-item {
     padding-top: 8px;
     padding-bottom: 8px;
-    margin: auto;
     font-family: "Open Sans", sans-serif;
     line-height: 1.5;
     font-weight: 600;
+    margin-right: 30px;
 }
 
 .footer__menu {
     list-style: none;
     text-align: center;
+    display: flex;
 }
 
 .footer__description-text {
@@ -114,5 +116,15 @@
     .footer__social-icons-container,
     .footer__copyright-text {
         padding: 10px;
+    }
+
+    .footer__menu {
+        list-style: none;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer__menu-item {
+        margin: 0px;
     }
 }
