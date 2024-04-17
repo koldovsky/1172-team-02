@@ -1,7 +1,7 @@
 .header {
   padding: 30px 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
 }
 
@@ -21,8 +21,9 @@
   margin-left: 40px;
 }
 .header__address{
-  align-content: center;
+  padding-top: 15px;
   margin:0px;
+  display:flex;
 }
 .header__menu-item{
   padding:0;
@@ -32,8 +33,14 @@
   color:var(--header-nav-text-color);
   font-size:15px;
   font-family:"Open Sans", sans-serif;
+  font-weight: 500;
 }
 .header__address-link{
   font-size:15px;
   font-family:"Open Sans", sans-serif;
+}
+.header__addres-icon{
+  font-weight: bold;
+  color: var(--footer-nav-text-color);
+  padding-right: 2px;
 }
