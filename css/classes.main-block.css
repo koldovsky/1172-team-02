@@ -1,6 +1,6 @@
 .classes__block-title {
   font-size: 0.67rem;
-  color: var( --footer-nav-text-color);
+  color: var(--footer-nav-text-color);
 }
 
 .classes__list {
@@ -9,9 +9,9 @@
 }
 
 @media (min-width: 990px) {
-    .classes__list {
-        grid-template-columns: 1fr 1fr;
-    }
+  .classes__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .button_join-group {
@@ -20,6 +20,7 @@
   display: inline-block;
   border: 1px solid var(--footer-copyright-background-color);
 }
+
 .button_join-group:hover {
   background-color: var(--header-nav-text-color);
 }

@@ -18,8 +18,9 @@
   --schedule-title-color: rgb(30, 45, 75);
   --schedule-text-color: rgba(114, 118, 130, 0.69);
   --header-hero-background-color-info: #dceafd;
-  --header-burger-menu-span-color:#151f36;
+  --header-burger-menu-span-color: #151f36;
 }
+
 h1,
 h2,
 h3,
