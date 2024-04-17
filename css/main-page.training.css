@@ -1,25 +1,20 @@
-/* Стилі для заголовка розділу */
 .training__section {
     color: var(--ui-brand-color);
 }
 
-/* Стилі для заголовка другого рівня */
 .training__title {
     margin-top: 20px;
 }
 
-/* Стилі для підзаголовка розділу */
 .training__sub-title {
     color: rgba(47, 53, 71, 0.71);
 }
 
-/* Стилі для тексту розділу */
 .training__description {
     color: rgb(134, 139, 155);
     margin-top: 20px;
 }
 
-/* Стилі для кнопки */
 .training__button {
     display: inline-block;
     padding: 10px 20px;

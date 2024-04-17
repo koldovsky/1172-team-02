@@ -3,17 +3,14 @@
     margin-bottom: 30px;
 }
 
-/* Стилі для тексту заголовка */
 .pricing_header_section .pricing__section {
     color: rgb(227, 195, 156);
 }
 
-/* Стилі для підзаголовка розділу */
 .pricing_header_section .pricing__title {
     color: rgb(114, 118, 130);
 }
 
-/* Стилі для контенту розділу */
 .pricing_header_section .pricing__description {
     display: flex;
     justify-content: space-around;
@@ -21,7 +18,6 @@
     margin-bottom: 50px;
 }
 
-/* Стилі для окремого елемента колекції */
 .classes__section {
     padding: 30px;
     border-radius: 10px;
@@ -30,30 +26,24 @@
     text-align: center;
 }
 
-/* Стилі для назви послуги */
 .classes__title {
     margin-bottom: 20px;
 }
 
-/* Стилі для опису послуги */
 .classes__description {
     color: rgb(134, 139, 155);
     margin-bottom: 20px;
 }
 
-/* Стилі для списку цін */
 .classes__list {
     color: rgb(114, 118, 130);
 }
 
-/* Стилі для ціни */
 .classes__price strong {
     font-weight: bold;
     color: rgb(227, 195, 156);
 }
 
-
-/* Стилі для кнопки */
 .pricing__button {
     display: inline-block;
     padding: 10px 20px;
