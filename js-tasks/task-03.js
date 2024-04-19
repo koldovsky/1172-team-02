@@ -11,3 +11,8 @@ function move(position, roll) {
 
     return newPosition;
 }
+
+// Лущиков
+function move(position, roll) {
+    return position + 2 * roll;
+}
