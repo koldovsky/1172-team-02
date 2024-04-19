@@ -18,6 +18,6 @@ function move(position, roll) {
 }
 
 // Ivan Oheruk
-function move (position, roll) {
-  return (position = position + 2 * roll);
+function move(position, roll) {
+    return (position = position + 2 * roll);
 }
