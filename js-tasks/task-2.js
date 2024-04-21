@@ -28,8 +28,21 @@ function DNAtoRNA(dna) {
 
 // Find Maximum and Minimum Values of a List  https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
+var min = function (list) {
+    return Math.min(...list)
+}
 
+var max = function (list) {
+    return Math.max(...list)
+}
 
+var min = function (list) {
+    return Math.min.apply(null, list);
+}
+
+var max = function (list) {
+    return Math.max.apply(null, list);
+}
 
 // Smallest value of an array  https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
@@ -41,3 +54,7 @@ function min(arr, toReturn) {
 function min(arr, toReturn) {
     return (toReturn == 'value') ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
 }
+
+// BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!!
+
+//
