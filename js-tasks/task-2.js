@@ -16,8 +16,6 @@ function DNAtoRNA(dna) {
     return dna.replace(/T/g, 'U');
 }
 
-const DNAtoRNA = dna => dna.replace(/T/g, 'U');
-
 function DNAtoRNA(dna) {
     return dna.split("T").join("U");
 }
@@ -57,4 +55,32 @@ function min(arr, toReturn) {
 
 // BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!! BONUS TASKS !!!
 
-//
+// A wolf in sheep's clothing https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/solutions/javascript
+
+function warnTheSheep(queue) {
+    const wolfIndex = queue.findIndex(animal => animal === 'wolf');
+    const sheepPosition = queue.length - wolfIndex - 1;
+
+    if (wolfIndex === queue.length - 1) {
+        return "Pls go away and stop eating my sheep";
+    } else {
+        return `Oi! Sheep number ${sheepPosition}! You are about to be eaten by a wolf!`;
+    }
+}
+
+// Beginner - Lost Without a Map https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+
+function maps(x) {
+    return x.map(num => num * 2)
+}
+
+// Find the first non-consecutive number https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+
+function firstNonConsecutive(arr) {
+    for (let i = 0; i < arr.length - 1; ++i) {
+        if (arr[i] + 1 !== arr[i + 1]) {
+            return arr[i + 1]
+        }
+    }
+    return null
+}
