@@ -1,0 +1,31 @@
+.training__section {
+    color: var(--ui-brand-color);
+}
+
+.training__title {
+    margin-top: 20px;
+}
+
+.training__sub-title {
+    color: rgba(47, 53, 71, 0.71);
+}
+
+.training__description {
+    color: rgb(134, 139, 155);
+    margin-top: 20px;
+}
+
+.training__button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--ui-primary-light);
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.training__button {
+    background-color: #088754;
+}

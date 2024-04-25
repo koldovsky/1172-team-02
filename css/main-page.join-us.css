@@ -1,0 +1,30 @@
+.join-us__section {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgb(220, 234, 253);
+    text-align: center;
+}
+
+.join-us__title {
+    margin-bottom: 20px;
+}
+
+.join-us__sub-title {
+    color: rgb(114, 118, 130);
+    margin-bottom: 20px;
+}
+
+.join-us__button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--ui-primary-light);
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.join-us__button {
+    background-color: #088754;
+}

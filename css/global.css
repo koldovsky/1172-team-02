@@ -12,6 +12,14 @@
   --header-nav-text-color: rgba(47, 53, 71, 0.7);
   --footer-nav-text-color: #5995c5;
   --footer-paragraph-color: rgba(255, 255, 255, 0.6);
+  --footer-background-color: #2f3547;
+  --footer-copyright-background-color: rgb(41, 46, 63);
+  --schedule-accent-color: #f3f5e9;
+  --schedule-title-color: rgb(30, 45, 75);
+  --schedule-text-color: rgba(114, 118, 130, 0.69);
+  --header-hero-background-color-info: #dceafd;
+  --header-burger-menu-span-color: #151f36;
+  --classes-header-background-color: rgb(220, 234, 253);
 }
 
 h1,
@@ -21,12 +29,20 @@ h4 {
   font-family: "Marcellus", serif;
 }
 
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
 img {
   display: block;
   width: 100%;
 }
 
-.header{
-  padding:30px 40px;
-  display: flex;
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }

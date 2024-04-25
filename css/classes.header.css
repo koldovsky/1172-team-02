@@ -1,0 +1,7 @@
+.classes__list-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0;
+}
+
