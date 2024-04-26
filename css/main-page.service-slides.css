@@ -1,0 +1,10 @@
+.slides__image {
+    display: flex;
+    width: 230px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.slides {
+    display: flex;
+}

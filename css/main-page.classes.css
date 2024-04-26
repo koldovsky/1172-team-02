@@ -10,3 +10,45 @@
     color: rgb(134, 139, 155);
     margin-top: 20px;
 }
+
+.classes__caurosel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    display: flex;
+    grid-template-columns: 100px 1fr 100px;
+    min-height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.carousel__image {
+    display: grid;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media (min-width: 600px) {
+
+    .products__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .products__list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
