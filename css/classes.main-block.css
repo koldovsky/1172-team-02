@@ -1,11 +1,8 @@
-.classes__block-title {
-  font-size: 0.67rem;
-  color: var(--footer-nav-text-color);
-}
-
 .classes__list {
   display: grid;
   gap: 10px;
+  padding: 0 24px;
+  background-color: var(--background-color-secondary);
 }
 
 @media (min-width: 990px) {
