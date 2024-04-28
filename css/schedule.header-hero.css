@@ -1,25 +1,30 @@
 .header {
-    padding: 0;
+    flex-direction: column;
 }
+
 .schedule-header {
     padding: 75px 0 85px;
     background-color: var(--schedule-accent-color);
-    
 }
+
 .schedule-header__title {
     font-size: 30px;
     text-align: center;
-    
+    color: var(--schedule-title-color);
+    font-weight: 400;
+    padding-bottom: 30px;
 }
+
 .schedule-header__description {
     text-decoration: none;
     color: var(--schedule-text-color);
     font-size: 11px;
     text-align: center;
+    letter-spacing: 2.2px;
+
     .schedule-header__description-link {
         text-decoration: underline;
+        font-weight: bold;
     }
-    
+
 }
-
-

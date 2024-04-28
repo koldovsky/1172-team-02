@@ -1,34 +1,42 @@
- /* Стилі для контейнера елемента */
- .join-us__section {
-     padding: 30px;
-     border-radius: 10px;
-     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-     background-color: rgb(220, 234, 253);
-     text-align: center;
- }
+.join-us__main_section {
+    position: relative;
+}
 
- /* Стилі для заголовка */
- .join-us__title {
-     margin-bottom: 20px;
- }
+.join-us__section {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgb(220, 234, 253);
+    text-align: center;
+}
 
- /* Стилі для підзаголовка */
- .join-us__sub-title {
-     color: rgb(114, 118, 130);
-     margin-bottom: 20px;
- }
+.join-us__image {
+    display: block;
+    height: 10%;
+    max-width: 10%;
+    margin: auto;
+}
 
- /* Стилі для кнопки */
- .join-us__button {
-     display: inline-block;
-     padding: 10px 20px;
-     border-radius: 5px;
-     background-color: var(--ui-primary-light);
-     color: #ffffff;
-     text-decoration: none;
-     transition: background-color 0.3s ease;
- }
+.join-us__title {
+    margin-bottom: 20px;
+}
 
- .join-us__button {
-     background-color: #088754;
- }
+.join-us__sub-title {
+    color: rgb(114, 118, 130);
+    margin-bottom: 20px;
+}
+
+.join-us__button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #5995c5;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    width: 10%;
+    height: 10%;
+    transition: inherit;
+}
