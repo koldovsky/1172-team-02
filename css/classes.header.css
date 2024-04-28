@@ -1,5 +1,35 @@
 .classes__list-header {
-    height: 200px;
-    padding: 40px;
-    text-align: center;
+  background-color:var(--background-color-secondary);
+  display: grid;
+  grid-template-rows: 1fr 4fr 3fr;
+  justify-content: center;
+  padding: 90px 0;
+}
+
+.classes__block-title {
+  color: var(--footer-nav-text-color);
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.classes__subtitle {
+  display: flex;
+  font-size: 30px;
+  color: var(--schedule-title-color);
+  font-weight: 100;
+  letter-spacing: 0.6px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.classes__description {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: var(--text-color-sub-secondary);
+  font-size: 18px;
 }

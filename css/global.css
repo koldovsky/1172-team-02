@@ -18,7 +18,14 @@
   --schedule-title-color: rgb(30, 45, 75);
   --schedule-text-color: rgba(114, 118, 130, 0.69);
   --header-hero-background-color-info: #dceafd;
+  --header-burger-menu-span-color: #151f36;
+  --classes-header-background-color: rgb(220, 234, 253);
+  --text-color-secondary: rgba(114,118,130,0.69);
+  --text-color-sub-secondary: rgb(114,118,130);
+  --background-color-secondary: rgba(248,248,248,1);
+
 }
+
 h1,
 h2,
 h3,

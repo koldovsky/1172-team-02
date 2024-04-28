@@ -1,15 +1,47 @@
-/* Стилі для заголовка другого рівня */
-.training__title {
-    margin-top: 20px;
+.main-page-classes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-/* Стилі для підзаголовка розділу */
-.main-page-classes__sub-title {
-    color: rgb(114, 118, 130);
+.main-page-classes__header {
+    .main-page-classes__title {
+        color: #32bbcb;
+        text-align: center;
+    }
+
+    .main-page-classes__sub-title {
+        color: #151f36;
+        text-align: center;
+    }
+
+    .main-page-classes__description {
+        color: rgb(134, 139, 155);
+        margin-top: 20px;
+        text-align: center;
+    }
 }
 
-/* Стилі для тексту розділу */
-.main-page-classes__description {
-    color: rgb(134, 139, 155);
-    margin-top: 20px;
+.classes__caurosel {
+    display: flex;
+    max-height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-right__button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #263a4f;
+}
+
+.carousel__image {
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
 }

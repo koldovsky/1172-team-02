@@ -1,61 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/classes.css" />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-logo.partial.html"
-      ></div>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-nav.partial.html"
-      ></nav>
-      <address
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-address.partial.html"
-      ></address>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="classes.header-hero.partial.html"
-      ></div>
-    </header>
-    <main>
-      <article data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="classes.header.partial.html">
-      </article>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="classes.main-block.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="classes.private-lessons-block.partial.html"
-      ></section>
-    </main>
-    <footer></footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
+  <link rel="stylesheet" href="css/classes.css" />
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-logo.partial.html"></div>
+    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-nav.partial.html"></nav>
+    <address data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-address.partial.html"></address>
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="classes.header-hero.partial.html"></div>
+  </header>
+  <main>
+    <article data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="classes.header.partial.html">
+    </article>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="classes.main-block.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="classes.private-lessons-block.partial.html">
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
