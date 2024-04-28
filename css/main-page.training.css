@@ -29,3 +29,11 @@
 .training__button {
     background-color: #088754;
 }
+
+.training_image {
+    height: 100%;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+}
