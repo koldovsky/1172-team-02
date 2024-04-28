@@ -14,11 +14,9 @@
     padding: 30px 0;
 }
 .schedule__table {
-    width: 100;
+    width: 100%;
     padding: 15px 20px;
 }
-
-.schedule__table thead tr {}
 
 th, td {
     table-layout: auto;
