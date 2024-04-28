@@ -1,5 +1,6 @@
 .training__section {
-    color: var(--ui-brand-color);
+    color: #5995c5;
+    ;
 }
 
 .training__title {
@@ -19,15 +20,11 @@
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: var(--ui-primary-light);
+    background-color: #5995c5;
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
     margin-top: 20px;
-}
-
-.training__button {
-    background-color: #088754;
 }
 
 .training_image {

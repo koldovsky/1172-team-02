@@ -63,14 +63,10 @@
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #088754;
+    background-color: #5995c5;
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
-}
-
-.pricing__button:hover {
-    background-color: #067246;
 }
 
 .classes__image {

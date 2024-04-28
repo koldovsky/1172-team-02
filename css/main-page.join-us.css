@@ -31,7 +31,7 @@
     margin: 0 auto;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #2f3547;
+    background-color: #5995c5;
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -39,8 +39,4 @@
     width: 10%;
     height: 10%;
     transition: inherit;
-}
-
-.join-us__button {
-    background-color: #088754;
 }
