@@ -9,26 +9,39 @@
 }
 
 .pricing_header_section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: absolute;
+    flex-direction: column;
     top: 0;
     left: 0;
-    text-align: center;
-    margin-bottom: 30px;
+    justify-content: flex-start
+
 }
 
-.pricing_header_section .pricing__section {
+.pricing__section {
     color: rgb(227, 195, 156);
+    text-align: center;
 }
 
-.pricing_header_section .pricing__title {
+.pricing__title {
     color: rgb(114, 118, 130);
+    text-align: center;
 }
 
-.pricing_header_section .pricing__description {
+.pricing__description {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     margin-bottom: 50px;
+    text-align: center;
+}
+
+.pricing_body_section {
+    position:relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .classes__section {
@@ -37,8 +50,13 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     text-align: center;
-    position: relative;
-    margin-top: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position:relative;
+    top: 100px;
+    left: 0;
+    width: 100%
 }
 
 .classes__title {
