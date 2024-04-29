@@ -1,0 +1,223 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--title-text-color: #1e2d4b;
+	--text-color: #727682;
+	--review-title-text-color: #151f36;
+	--review-text-color: #868b9b;
+	--special-text-color: #5995c5;
+	--mobile-slider-btn-color: #000000;
+}
+
+.reviews {
+	text-align: center;
+}
+
+.reviews__title {
+	margin-bottom: 20px;
+	font-size: 11px;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	color: var(--special-text-color);
+}
+
+.reviews__big__text {
+	margin-bottom: 25px;
+	font-size: 30px;
+	line-height: 1.3;
+	font-family: 'Marcellus', serif;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: var(--title-text-color);
+}
+
+.reviews__small__text {
+	margin-bottom: 45px;
+	font-size: 18px;
+	line-height: 1.4;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	color: var(--text-color);
+}
+
+.reviews__slider__container {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.reviews__slider__btn__wrapper {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.reviews__slider__btn__wrapper.left > svg {
+	rotate: 180deg;
+}
+
+.reviews__slider__btn__img {}
+
+.reviews__slider__slides__list__wrapper {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.reviews__slider__slides__list {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.reviews__slider__slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+}
+
+.reviews__slider__slide__img__wrapper {}
+
+.reviews__slider__slide__img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.reviews__slider__slide__title {
+	line-height:  1.3;
+	font-family: 'Marcellus', serif;
+	font-weight: 400;
+	color: var(--review-title-text-color);
+}
+
+.reviews__slider__slide__text {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: var(--review-text-color);
+}
+
+.reviews__slider__slide__date {
+	font-size: 12px;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: var(--special-text-color);
+}
+
+@media screen and (max-width: 767px) {
+	.reviews {
+		padding-top: 90px;
+		padding-right: 24px;
+		padding-bottom: 90px;
+		padding-left: 24px;
+	}
+
+	.reviews__slider__btn__wrapper {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background-color: var(--mobile-slider-btn-color);
+	}
+
+	.reviews__slider__btn__wrapper > svg {
+		width: 12px;
+		height: 12px;
+		fill: var(--special-text-color);
+	}
+
+	.reviews__slider__slides__list__wrapper {
+		max-width: calc(100vw - 10px - 96px);
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	.reviews__slider__slide {
+		min-width: calc(100vw - 96px - 10px);
+	}
+
+	.reviews__slider__slide__img__wrapper {
+
+	}
+
+	.reviews__slider__slide__img {
+		max-width: 70px;
+	}
+
+	.reviews__slider__slide__title {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 339px) {}
+
+@media screen and (min-width: 768px) {
+	.reviews {
+		padding-top: 90px;
+		padding-right: 32px;
+		padding-bottom: 90px;
+		padding-left: 32px;
+	}
+
+	.reviews__slider__btn__wrapper {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background-color: var(--mobile-slider-btn-color);
+	}
+
+	.reviews__slider__btn__wrapper > svg {
+		width: 30px;
+		height: 30px;
+		fill: var(--special-text-color);
+	}
+
+	.reviews__slider__slides__list__wrapper {
+		max-width: calc(100vw - 240px - 128px);
+		margin-right: 120px;
+		margin-left: 120px;
+	}
+
+	.reviews__slider__slide {
+		min-width: calc(100vw - 128px - 240px);
+	}
+
+	.reviews__slider__slide__img {
+		width: 100%;
+		max-width: 120px;
+		border-radius: 50%;
+	}
+
+	.reviews__slider__slide__title {
+		font-size: 24px;
+	}
+}
