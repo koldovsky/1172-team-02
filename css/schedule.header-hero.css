@@ -5,6 +5,7 @@
 .schedule-header {
     padding: 75px 0 85px;
     background-color: var(--schedule-accent-color);
+    text-align: center;
 }
 
 .schedule-header__title {
