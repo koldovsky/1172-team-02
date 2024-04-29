@@ -1,7 +1,6 @@
 const buttons = document.querySelector("[data-carousel-button]");
-console.log(buttons);
 
-buttons.forEach(button => {
+button => {
     button.addEventListener("click", () => {
         const offset = button.dataset.carouselButton === "next" ? 1 : -1
         const slides = button
@@ -16,4 +15,4 @@ buttons.forEach(button => {
         slides.children[newIndex].dataset.active = true
         delete activeSlide.dataset.active
     })
-})
+}
