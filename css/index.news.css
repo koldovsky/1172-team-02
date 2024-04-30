@@ -39,7 +39,7 @@
     border-radius: 50%;
     margin-left: 20px;
     display: block;
-    border-radius: 50%; /* if you want the image to be circular */
+    border-radius: 50%; 
     margin-bottom: 20px; 
 }
 
@@ -63,18 +63,22 @@
 
 
 .news__sheet-image-wrapper {
-    margin-left: auto; /* This pushes the image to the right side */
-    position: relative; /* Needed for the absolute positioning of the button */
+    margin-left: auto; 
+    position: relative; 
 }
 
 
 .btn-link {
     position: absolute;
     margin-top: 10px;
-    bottom: 5px; /* Adjust the distance from the bottom */
-    right: 10px; /* Adjust the distance from the right */
-    padding: .125rem .75rem; /* Optional: Adjust padding if needed */
-    color: #007bff; /* Optional: Adjust the link color if needed */
-    text-decoration: none; /* Optional: If you don't want underline */
-    background-color: transparent; /* Optional: In case you need a background */
+    bottom: 5px; 
+    right: 10px; 
+    padding: .125rem .75rem; 
+    color: #494b4d;
+    text-decoration: none; 
+    background-color: transparent;
+}
+.btn-link:hover {
+    color: #494b4d;
+    text-decoration: underline;
 }
