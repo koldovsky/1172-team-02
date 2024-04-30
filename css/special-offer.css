@@ -1,0 +1,32 @@
+.special__offer {}
+
+.special__offer__background__container {}
+
+.special__offer__background__img {}
+
+.special__offer__content__wrapper {}
+
+.special__offer__title {}
+
+.special__offer__text__container {}
+
+.special__offer__text__title {}
+
+.special__offer__call__to__action {}
+
+.special__offer__text {}
+
+.special__offer__buttons__list {}
+
+.special__offer__primary__btn {}
+
+.special__offer__secondary__btn {}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 339px) {}
+
+@media screen and (min-width: 768px) {}
+
