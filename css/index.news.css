@@ -1,0 +1,80 @@
+
+
+.container {
+    max-width: 1200px;
+}
+
+.news__picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.news__board {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: auto;
+}
+
+.news__sheet {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.news__sheet-text {
+    flex: 1;
+}
+
+.news__sheet-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 20px;
+    display: block;
+    border-radius: 50%; /* if you want the image to be circular */
+    margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-md-5, .col-md-7 {
+        width: 100%;
+        height: auto;
+    }
+    .news__sheet {
+        flex-direction: column;
+        align-items: start;
+    }
+    .news__sheet-image {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+.news__sheet-image-wrapper {
+    margin-left: auto; /* This pushes the image to the right side */
+    position: relative; /* Needed for the absolute positioning of the button */
+}
+
+
+.btn-link {
+    position: absolute;
+    margin-top: 10px;
+    bottom: 5px; /* Adjust the distance from the bottom */
+    right: 10px; /* Adjust the distance from the right */
+    padding: .125rem .75rem; /* Optional: Adjust padding if needed */
+    color: #007bff; /* Optional: Adjust the link color if needed */
+    text-decoration: none; /* Optional: If you don't want underline */
+    background-color: transparent; /* Optional: In case you need a background */
+}
