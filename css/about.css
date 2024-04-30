@@ -109,6 +109,43 @@
     font-family: "Open Sans", sans-serif; 
 }
 
+@media only screen and (max-width: 9000px) {
+    .about-header {
+        padding: 15px 0px 15px;
+    }
+    
+    .about {
+        padding: 100px 15px;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .about_us_columns {
+        padding: 0px;
+    }
+    
+    .our_short_story-community {
+        font-size: 15px; 
+    }
+
+    .images-about_us_girl img {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin-top: 15px; 
+    }
+    .section-achievement {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement {
+        width: 100%;
+        margin-bottom: 15px; 
+    }
+}
 
 
 
