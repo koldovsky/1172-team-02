@@ -76,8 +76,6 @@ ul {
 	rotate: 180deg;
 }
 
-.reviews__slider__btn__img {}
-
 .reviews__slider__slides__list__wrapper {
 	width: 100%;
 	overflow-x: hidden;
@@ -100,8 +98,6 @@ ul {
 	gap: 20px;
 	width: 100%;
 }
-
-.reviews__slider__slide__img__wrapper {}
 
 .reviews__slider__slide__img {
 	width: 100%;
@@ -166,10 +162,6 @@ ul {
 
 	.reviews__slider__slide {
 		min-width: calc(100vw - 96px - 10px);
-	}
-
-	.reviews__slider__slide__img__wrapper {
-
 	}
 
 	.reviews__slider__slide__img {
