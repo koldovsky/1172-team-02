@@ -1,21 +1,43 @@
-.pricing_header_section {
+.pricing {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 50px;
     text-align: center;
-    margin-bottom: 30px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
 
-.pricing_header_section .pricing__section {
+.pricing_header_section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    flex-direction: column;
+}
+
+.pricing__section {
     color: rgb(227, 195, 156);
+    text-align: center;
 }
 
-.pricing_header_section .pricing__title {
+.pricing__title {
     color: rgb(114, 118, 130);
+    text-align: center;
 }
 
-.pricing_header_section .pricing__description {
+.pricing__description {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     margin-bottom: 50px;
+    text-align: center;
+}
+
+.pricing_body_section {
+    position:relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .classes__section {
@@ -24,6 +46,11 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     text-align: center;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    left: 0;
+    width: 100%
 }
 
 .classes__title {
@@ -48,12 +75,15 @@
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #088754;
+    background-color: #5995c5;
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.pricing__button:hover {
-    background-color: #067246;
+.classes__image {
+    display: block;
+    height: 20%;
+    max-width: 20%;
+    margin: auto;
 }

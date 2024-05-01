@@ -1,0 +1,34 @@
+.slides__image {
+    max-width: 300px;
+    max-height: 300px;
+    height: 100%;
+    padding: 20px;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    padding: 0 20px 20px 20px;
+    align-items: center;
+    min-height: 100%;
+}
+
+@media (max-width: 475px) {
+    .slides {
+        display: inline;
+    }
+}
+
+@media (max-width: 780px) {
+    .slides {
+        position: relative;
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 973px) {
+    .slides {}
+}

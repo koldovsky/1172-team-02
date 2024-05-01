@@ -1,0 +1,80 @@
+body {
+    background: rgb(243, 245, 233);
+    text-align: center;
+    padding: 120px 0px;
+    margin: 0px 156.9px;
+}
+
+.team {
+    color: #CBD0B0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.meet-our-coaches {
+    color: #1E2D4B; 
+    font-family: "Marcellus", serif;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.meet-our-coaches_info {
+    color: #727682;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+.email {
+    color: #CBD0B0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.email-info {
+    color: #727682;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.about_logo img {
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 1170px) {
+    body {
+        margin: 0;
+        padding: 50px 0;
+    }
+
+    .header_meet-our-coaches {
+        padding: 0 20px;
+    }
+
+    .footer_meet-our-coaches {
+        padding: 0 20px;
+    }
+
+    .meet-our-coaches {
+        font-size: 28px;
+    }
+
+    .meet-our-coaches_info {
+        font-size: 16px;
+    }
+
+    .email-info,
+    .email {
+        font-size: 14px;
+    }
+
+    .img-logo_meet-our-coaches img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+  

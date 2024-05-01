@@ -26,10 +26,8 @@
 }
 
 .schedule__table {
-    table-layout: fixed;
-    width: auto;
+    width: 100;
     padding: 15px 20px;
-
 }
 
 th,
