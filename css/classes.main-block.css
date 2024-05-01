@@ -1,23 +1,69 @@
 .classes__list {
   display: grid;
-  gap: 10px;
+  gap: 0 30px 30px 30px;
   padding: 0 24px;
   background-color: var(--background-color-secondary);
 }
 
-@media (min-width: 990px) {
-  .classes__list {
-    grid-template-columns: 1fr 1fr;
-  }
+.classes__list__yoga-types {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 39px 43px;
+  background-color: var(--background-color-narrative);
+}
+
+.classes__list__yoga-types-title {
+  display: flex;
+  align-items: flex-end;
+  font-size: 28px;
+}
+
+.classes__list__yoga-types-instructors {
+  font-size: 11px;
+  color: var(--text-color-focus);
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .button_join-group {
-  padding: 20px;
-  background-color: var(--footer-paragraph-color);
-  display: inline-block;
-  border: 1px solid var(--footer-copyright-background-color);
+  display: flex;
+  align-items: flex-end;
 }
 
-.button_join-group:hover {
-  background-color: var(--header-nav-text-color);
+.button_join-group a {
+  color: var(--text-color-emphasis);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  border: 1px solid var(--footer-copyright-background-color);
+  background-color: var(--footer-paragraph-color);
+  padding: 20px 25px;
+}
+
+.button_join-group a:hover {
+  background-color: var(--text-color-emphasis);
+  color: var(--background-color-narrative);
+}
+
+.classes__list__yoga-types-descriptions {
+  color: var(--text-color-narrative);
+}
+
+@media screen and (min-width: 768px) {
+  .classes__list {
+    grid-template-columns: 1fr;
+  }
+
+  .classes__list__yoga-types {
+    grid-template-columns: 1fr 1fr;
+  }
+  .classes__list__yoga-types:nth-child(even) .yoga-type-image {
+    order: 2;
+  }
+}
+
+.private-lesson {
+  background-image: url("../img/classes/background-private-lesson.jpeg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
