@@ -1,6 +1,7 @@
+
 .schedule-header {
     padding: 75px 0 85px;
-    background-color: var(--schedule-accent-color);
+    background-color: var(--footer-paragraph-color);
     text-align: center;
 }
 
