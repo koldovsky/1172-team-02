@@ -19,8 +19,8 @@
       data-hx-get="common.header-logo.partial.html"></div>
     <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
       data-hx-get="common.header-nav.partial.html"></nav>
-    <address class="header__address" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="common.header-address.partial.html"></address>
+    <div class="header__burger-menu" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="common.header-burger-menu.partial.html"></div>
     <div class="schedule-header" data-hx-trigger="load" data-hx-swap="outerHTML"
       data-hx-get="schedule.header-hero.partial.html"></div>
   </header>
@@ -28,11 +28,21 @@
     <section class="schedule" data-hx-trigger="load" data-hx-swap="outerHTML"
       data-hx-get="schedule.schedule.partial.html"></section>
   </main>
-  <footer>
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-logo.partial.html"></div>
-    <p data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.footer-title.partial.html"></p>
-    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-nav.partial.html"></nav>
-    <p data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.footer-description.partial.html"></p>
+  <footer class="footer">
+    <div class="footer__logo" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="common.footer-logo.partial.html"></div>
+    <p class="footer__title" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="common.footer-title.partial.html"></p>
+    <nav class="footer__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="common.footer-nav.partial.html"></nav>
+    <p class="footer__description" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="common.footer-description.partial.html"></p>
+    <div class="social-copyright-container">
+      <div class="footer__social-icons-container" data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="common.footer-social-icons.partial.html"></div>
+      <h2 class="footer__copyright-text" data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="common.footer-copyright-text.partial.html"></h2>
+    </div>
   </footer>
   <script src="js/schedule.js"></script>
 </body>
