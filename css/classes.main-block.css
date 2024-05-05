@@ -1,13 +1,16 @@
 .classes__list {
   display: grid;
-  gap: 0 30px 30px 30px;
   padding: 0 24px;
+  background-color: var(--background-color-secondary);
+}
+
+.section-wrapper {
   background-color: var(--background-color-secondary);
 }
 
 .classes__list__yoga-types {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr 1fr auto 2fr;
   padding: 39px 43px;
   background-color: var(--background-color-narrative);
 }
@@ -16,12 +19,15 @@
   display: flex;
   align-items: flex-end;
   font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: var(--schedule-title-color);
 }
 
 .classes__list__yoga-types-instructors {
   font-size: 11px;
   color: var(--text-color-focus);
-  letter-spacing: 2px;
+  letter-spacing: 2.2px;
   font-weight: 700;
 }
 
@@ -37,7 +43,7 @@
   letter-spacing: 1.2px;
   border: 1px solid var(--footer-copyright-background-color);
   background-color: var(--footer-paragraph-color);
-  padding: 20px 25px;
+  padding: 17px 25px;
 }
 
 .button_join-group a:hover {
@@ -52,12 +58,19 @@
 @media screen and (min-width: 768px) {
   .classes__list {
     grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+  .classes__list__yoga-types-title {
+    font-size: 32px;
+    align-items: center;
   }
 
-  .classes__list__yoga-types {
+  .item-wrapper {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .classes__list__yoga-types:nth-child(even) .yoga-type-image {
+
+  .item-wrapper:nth-of-type(even) .yoga-type-image {
     order: 2;
   }
 }
@@ -65,5 +78,49 @@
 .private-lesson {
   background-image: url("../img/classes/background-private-lesson.jpeg");
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-top: 120px;
+}
+
+.outer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 125px 14px;
+}
+
+.private-lesson-wrapper {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-narrative);
+  min-height: 450px;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.classes__private-lessons-book-a-class {
+  color: var(--background-color-narrative);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  background-color: var(--footer-nav-text-color);
+  padding: 17px 25px;
+}
+.classes__private-lessons-book-a-class:hover {
+  background-color: var(--text-color-emphasis);
+}
+
+.classes__list__yoga-types-title .private-lesson-wrapper {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .outer-wrapper {
+    grid-template-columns: 1fr 1.8fr;
+    padding: 125px 24px;
+  }
 }
