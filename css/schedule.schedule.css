@@ -1,7 +1,7 @@
 .schedule {
   display: block;
   text-align: center;
-  padding: 90px 24px;
+  padding: 30px 24px;
 }
 
 .schedule__title {
@@ -25,9 +25,14 @@
   letter-spacing: normal;
 }
 
+.table-section {
+  padding: 15px 20px;
+}
+
 .table-container {
   display: table;
-  width: 300px;
+  margin: 0 auto 30px auto;
+  min-width: 100%;
   border: 1px solid #ccc;
   border-collapse: collapse;
   padding: 10px;
@@ -37,23 +42,43 @@
   display: table-row;
 }
 
-.table-cell {
+.table-cell-name {
   display: table-cell;
   padding: 10px;
   border: 1px solid #ccc;
+  font-size: 11px;
+  color: var(--footer-nav-text-color);
+  font-weight: 700;
+  letter-spacing: 2.2;
 }
 
-.table-cell__value-title {
+.table-cell-day {
+  padding: 10px;
+  font-family: "Marcellus", serif;
+  color: var(--schedule-title-color);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.table-cell__value-box {
   display: flex;
+  flex: 1;
   flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-/*.schedule__table {
-    width: 100;
-    padding: 15px 20px;
+.table-cell__value {
+  color: var(--schedule-text-color);
 }
 
-th,
-td {
-    border: 1px solid black;
-} */
+@media (min-width: 780px) {
+  .table-container {
+    display: none;
+  }
+}
+
+.table-pc-container {
+  display: flex;
+  flex-direction: row;
+}
