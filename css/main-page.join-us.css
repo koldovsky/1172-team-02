@@ -1,13 +1,16 @@
 .join-us__main_section {
     position: relative;
+    padding: 50px;
+    height: 80%;
 }
 
 .join-us__section {
-    padding: 30px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background-color: rgb(220, 234, 253);
     text-align: center;
+    font-weight: 80%;
 }
 
 .join-us__image {
@@ -18,17 +21,20 @@
 }
 
 .join-us__title {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .join-us__sub-title {
     color: rgb(114, 118, 130);
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .join-us__button {
     display: block;
     margin: 0 auto;
+    margin-top: 20px;
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #5995c5;
@@ -39,4 +45,10 @@
     width: 10%;
     height: 10%;
     transition: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+.join-us__button:hover {
+    background-color: #2f3547;
 }
