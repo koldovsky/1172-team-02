@@ -1,16 +1,31 @@
 .write-us{
 
-    text-align: center;
     min-height: 980px;
+    margin: 0;
+    display: flex;
+
 }
-.write-us{
-    background-image: url(../img/about/girl-doing-stretching.jpg);
-    background-position: center;
+.write-us__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: url('../img/about/girl-doing-stretching.jpg') 86% 70.12% / cover no-repeat fixed, rgb(248, 248, 248);
 }
 .write-us__form{
     padding: 30px 30px;
-    min-height: 780px;
+    margin: 90px 24px;
+    margin-bottom: 250px;
     background-color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    max-height: 758.531px;
+    max-width: 377px;
+
+
 }
 .write-us__form-title{
     color: #5995C5;
@@ -19,8 +34,8 @@
     font-weight: bold;
     letter-spacing: 2.2px;
     line-height: 17.6px;
-    padding: 30px 30px;
-    min-width: 272px;
+    /*padding: 30px 30px;*/
+    /*min-width: 272px;*/
 }
 .write-us__form-subtitle{
     margin-top: 20px;
@@ -40,5 +55,63 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 25.2px;
-    padding: 30px 30px;
+    /*padding: 30px 30px;*/
 }
+.write-us__form-form {
+
+}
+.write-us__form-form-input {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+}
+.write-us__form-form-input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+.write-us__form-form-message {
+    width: 100%;
+    height: 90px;
+    margin: 5px 0;
+}
+.write-us__form-form-message textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+.write-us__form-form-input input::placeholder {
+    font-size: 15px;
+    padding-left: 15px;
+}
+.write-us__form-form-message textarea::placeholder {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.write-us__form-form-button {
+    padding-top: 15px;
+}
+.write-us__form-form-button input {
+    width: 100%;
+    height: 52px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.2px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #2F3547;
+    border-color: #2F3547;
+    border-width: 1px;
+}
+.write-us__form-form-button input:hover {
+    background: rgb(47, 53, 71);
+    color: white;
+}
+
+
+
