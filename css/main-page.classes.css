@@ -11,8 +11,9 @@ body {
 .main-page-classes {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
+    text-align: center;
 }
 
 .main-page-classes__header {
@@ -44,36 +45,47 @@ body {
     display: flex;
     position: relative;
     overflow: hidden;
-    width: 70vw;
-    height: 70vh;
+    width: 100vw;
+    height: 50vh;
+    align-self: flex-end;
+    margin-bottom: 5px;
 }
 
 .carousel__slide {
     position: absolute;
     inset: 0;
     opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
     transition: 200ms opacity ease-in-out;
     transition-delay: 200ms;
 }
 
 .carousel__slide[data-active] {
+    position: absolute;
     opacity: 1;
+    inset: 0;
     z-index: 1;
-    
-    transition-delay: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-delay: 0.5s;
 }
 
 .carousel__image {
-    min-width: 80%;
-    height: 80%;
-    object-fit:initial;
+    border-radius: 50%;
+    min-width: auto;
+    max-height: 400px;
+    object-fit: initial;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel__plan {
     color: rgb(134, 139, 155);
     margin-top: 20px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .carousel__title {
@@ -111,9 +123,43 @@ body {
 .carousel__button--right {
     float: right;
     right: 1rem;
+    transform: translateY(-50%);
 }
 
 .carousel__button--left {
     float: left;
     left: 1rem;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    .carousel__image {
+        min-width: 150px;
+        min-height: 200px;
+    }
+
+    .classes__caurosel {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .classes__caurosel {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 3200px) {
+    .carousel__image {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .carousel__title {
+        margin-bottom: 20px;
+    }
 }
