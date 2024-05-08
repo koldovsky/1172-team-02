@@ -135,11 +135,7 @@ body {
 @media screen and (max-width: 768px) {
     .carousel__image {
         min-width: 150px;
-        min-height: 200px;
-    }
-
-    .classes__caurosel {
-        height: 30vh;
+        min-height: 170px;
     }
 }
 
@@ -157,6 +153,14 @@ body {
         height: auto;
         margin: auto;
         max-width: 80%;
+    }
+
+    .carousel__button--right {
+        right: 3rem;
+    }
+    
+    .carousel__button--left {
+        left: 3rem;
     }
 
     .carousel__title {
