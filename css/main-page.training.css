@@ -1,18 +1,27 @@
 .training__section {
-    position: relative;
-    display: flex;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:  #f8f8f8;
 }
 
 .training__section_title {
+    margin-top: 30px;
     color: #5995c5;
+    word-wrap: break-word;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
 .training {
+    margin-left: 20px;
     line-height: 1.5;
 }
 
 .training__title {
     margin-top: 20px;
+    color: rgb(5, 9, 27);
+    font-size: 30px;
 }
 
 .training__sub-title {
@@ -34,12 +43,18 @@
     text-decoration: none;
     transition: background-color 0.3s ease;
     margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.training__button:hover {
+    background-color: #2f3547;
 }
 
 .training_image {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     float: left;
     margin-right: 20px;
-    width: 100%;
 }

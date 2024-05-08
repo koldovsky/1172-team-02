@@ -1,40 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/schedule.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
-  <link rel="stylesheet" href="css/schedule.css">
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__logo-container" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="common.header-logo.partial.html"></div>
-    <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="common.header-nav.partial.html"></nav>
-    <address class="header__address" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="common.header-address.partial.html"></address>
-    <div class="schedule-header" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="schedule.header-hero.partial.html"></div>
-  </header>
-  <main class="main">
-    <section class="schedule" data-hx-trigger="load" data-hx-swap="outerHTML"
-      data-hx-get="schedule.schedule.partial.html"></section>
-  </main>
-  <footer>
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-logo.partial.html"></div>
-    <p data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.footer-title.partial.html"></p>
-    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-nav.partial.html"></nav>
-    <p data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.footer-description.partial.html"></p>
-  </footer>
-  <script src="js/schedule.js"></script>
-</body>
-
+  <body>
+    <header class="header">
+      <div class="header__top-row">
+        <div
+          class="header__logo-container"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.header-logo.partial.html"
+        ></div>
+        <nav
+          class="header__nav"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.header-nav.partial.html"
+        ></nav>
+        <div
+          class="header__burger-menu"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.header-burger-menu.partial.html"
+        ></div>
+      </div>
+      <div
+        class="schedule-header"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="schedule.header-hero.partial.html"
+      ></div>
+    </header>
+    <main class="main">
+      <section
+        class="schedule"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="schedule.schedule.partial.html"
+      ></section>
+    </main>
+    <footer class="footer">
+      <div
+        class="footer__logo"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-logo.partial.html"
+      ></div>
+      <p
+        class="footer__title"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-title.partial.html"
+      ></p>
+      <nav
+        class="footer__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-nav.partial.html"
+      ></nav>
+      <p
+        class="footer__description"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-description.partial.html"
+      ></p>
+      <div class="social-copyright-container">
+        <div
+          class="footer__social-icons-container"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.footer-social-icons.partial.html"
+        ></div>
+        <h2
+          class="footer__copyright-text"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.footer-copyright-text.partial.html"
+        ></h2>
+      </div>
+    </footer>
+    <script src="js/schedule.js"></script>
+  </body>
 </html>

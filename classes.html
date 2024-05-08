@@ -1,30 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
-  <link rel="stylesheet" href="css/classes.css" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-logo.partial.html"></div>
-    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-nav.partial.html"></nav>
-    <address data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header-address.partial.html"></address>
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="classes.header-hero.partial.html"></div>
-  </header>
-  <main>
-    <article data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="classes.header.partial.html">
-    </article>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="classes.main-block.partial.html"></section>
-    </section>
-  </main>
-  <footer></footer>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/classes.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-logo.partial.html"
+      ></div>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-nav.partial.html"
+      ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header-burger-menu.partial.html"
+      ></div>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="classes.header-hero.partial.html"
+      ></div>
+    </header>
+    <main>
+      <article
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="classes.header.partial.html"
+      ></article>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="classes.main-block.partial.html"
+      ></section>
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="pricing.html"></div>
+    </main>
+    <footer>
+      <div
+        class="footer__logo"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-logo.partial.html"
+      ></div>
+      <p
+        class="footer__title"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-title.partial.html"
+      ></p>
+      <nav
+        class="footer__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-nav.partial.html"
+      ></nav>
+      <p
+        class="footer__description"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.footer-description.partial.html"
+      ></p>
+      <div class="social-copyright-container">
+        <div
+          class="footer__social-icons-container"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.footer-social-icons.partial.html"
+        ></div>
+        <h2
+          class="footer__copyright-text"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.footer-copyright-text.partial.html"
+        ></h2>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>
