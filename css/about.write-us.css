@@ -3,6 +3,8 @@
     min-height: 980px;
     margin: 0;
     display: flex;
+    position: relative;
+    justify-content: center;
 
 }
 .write-us__background{
@@ -13,7 +15,12 @@
     height: 100%;
     background: url('../img/about/girl-doing-stretching.jpg') 86% 70.12% / cover no-repeat fixed, rgb(248, 248, 248);
 }
-.write-us__form{
+
+.spacer {
+    display: none;
+}
+
+.write-us__form  {
     padding: 30px 30px;
     margin: 90px 24px;
     margin-bottom: 250px;
@@ -24,8 +31,6 @@
     justify-content: center;
     max-height: 758.531px;
     max-width: 377px;
-
-
 }
 .write-us__form-title{
     color: #5995C5;
@@ -34,8 +39,6 @@
     font-weight: bold;
     letter-spacing: 2.2px;
     line-height: 17.6px;
-    /*padding: 30px 30px;*/
-    /*min-width: 272px;*/
 }
 .write-us__form-subtitle{
     margin-top: 20px;
@@ -55,7 +58,6 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 25.2px;
-    /*padding: 30px 30px;*/
 }
 .write-us__form-form {
 
@@ -113,5 +115,16 @@
     color: white;
 }
 
+@media (min-width: 765px) {
+    .spacer {
+        display: flex;
+        max-height: 759px;
+        max-width: 377px;
+        padding: 30px 30px;
+        margin: 90px 24px;
+        width: 301px;
+        height: 580px;
+    }
+}
 
 
