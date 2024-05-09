@@ -1,5 +1,10 @@
+ul {
+    list-style-type: none;
+}
+
 .pricing {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: beige;
     padding: 50px;
     text-align: center;
@@ -14,6 +19,7 @@
     justify-content: flex-end;
     position: absolute;
     flex-direction: column;
+    align-self: center;
 }
 
 .pricing__section {
@@ -24,6 +30,9 @@
 .pricing__title {
     color: rgb(114, 118, 130);
     text-align: center;
+    font-family: calibri;
+    color: rgb(5, 9, 27);
+    font-size: 30px;
 }
 
 .pricing__description {
@@ -32,12 +41,15 @@
     align-items: flex-start;
     margin-bottom: 50px;
     text-align: center;
+    font-size: 15px;
 }
 
 .pricing_body_section {
-    position:relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    position: relative;
 }
 
 .classes__section {
@@ -55,6 +67,9 @@
 
 .classes__title {
     margin-bottom: 20px;
+    font-family: calibri;
+    color: rgb(5, 9, 27);
+    font-size: 25px;
 }
 
 .classes__description {
@@ -73,12 +88,22 @@
 
 .pricing__button {
     display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #5995c5;
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    transition: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+
+.pricing__button:hover {
+    background-color: #2f3547;
 }
 
 .classes__image {
@@ -86,4 +111,34 @@
     height: 20%;
     max-width: 20%;
     margin: auto;
+}
+
+.classes__list li::before {
+    content: "\2022";
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.classes__list ::marker .classes__text {
+    color: colar;
+    font-weight: bold;
+    font-family: century;
+}
+
+@media screen and (max-width: 768px) {
+    .pricing_body_section {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+    .pricing_body_section {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
 }

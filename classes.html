@@ -18,27 +18,27 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-logo.partial.html"
-      ></div>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-nav.partial.html"
-      ></nav>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-burger-menu.partial.html"
-      ></div>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="classes.header-hero.partial.html"
-      ></div>
+    <header class="header">
+      <div class="header__top-row">
+        <div
+          class="header__logo-container"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.header-logo.partial.html"
+        ></div>
+        <nav
+          class="header__nav"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.header-nav.partial.html"
+        ></nav>
+        <div
+          class="header__burger-menu"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.header-burger-menu.partial.html"
+        ></div>
+      </div>
     </header>
     <main>
       <article
@@ -51,9 +51,9 @@
         data-hx-swap="outerHTML"
         data-hx-get="classes.main-block.partial.html"
       ></section>
-      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="pricing.html"></div>
+      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="pricing-part.html"></section>
     </main>
-    <footer>
+    <footer class="footer">
       <div
         class="footer__logo"
         data-hx-trigger="load"
