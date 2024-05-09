@@ -1,13 +1,25 @@
 .meet-yourself{
     margin: auto;
+    display: flex;
 }
-.meet-yourself__img{
+
+.meet-yourself__img .meet-yourself__text {
+    flex: 1;
+    border: 1px solid black;
+}
+
+.meet-yourself__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
 }
 .meet-yourself__text {
     padding-bottom: 90px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 90px;
+    padding-top: 70px;
     max-width: 570px;
 }
 .meet-yourself__title{
@@ -49,4 +61,11 @@
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
+}
+@media (max-width: 767px) {
+    .meet-yourself{
+        margin: auto;
+        max-width: 1200px;
+        display: block;
+    }
 }

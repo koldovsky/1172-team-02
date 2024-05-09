@@ -15,8 +15,8 @@
 
 .join-us__image {
     display: block;
-    height: 10%;
-    max-width: 10%;
+    height: 20%;
+    max-width: 20%;
     margin: auto;
 }
 
@@ -42,8 +42,8 @@
     text-decoration: none;
     transition: background-color 0.3s ease;
     position: relative;
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 15%;
     transition: inherit;
     cursor: pointer;
     border: none;
@@ -51,4 +51,21 @@
 
 .join-us__button:hover {
     background-color: #2f3547;
+}
+
+@media screen and (max-width: 768px) {
+    .join-us__section {
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .join-us__button {
+        padding: initial;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .join-us__button {
+        width: 25%;
+    }
 }
