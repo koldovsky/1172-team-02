@@ -1,2 +1,70 @@
-@import "global.css";
-@import "pricing-partial.css";
+.pricing-wrapper {
+  background-color: var(--background-color-emphasis);
+}
+
+.pricing {
+  padding: 90px 0;
+}
+
+.pricing__section {
+  color: var(--text-color-priority);
+  font-size: 11px;
+  letter-spacing: 2.2px;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__title {
+  color: var(--text-color-significance);
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  font-weight: 400;
+ 
+}
+
+.pricing__description {
+  color: var(--text-color-sub-secondary);
+  text-align: center;
+  font-size: 18px;
+}
+
+.pricing_header_section {
+  display: grid;
+  grid-template-rows: 1fr 5fr 7fr;
+  padding-bottom: 30px;
+}
+
+.pricing__title,
+.pricing__description {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; 
+}
+.classes__image {
+    height: 50px;
+}
+.classes__section {
+  padding: 24px;
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color-narrative);
+  gap: 20px;
+}
+.classes__list {
+  background-color: var(--background-color-narrative);
+}
+.pricing_body_wrapper {
+  display: grid;
+  gap: 20px;
+}
+.classes__description, .classes__list {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .pricing_body_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

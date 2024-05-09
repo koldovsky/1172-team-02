@@ -80,7 +80,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  padding: 20px;
+  padding: 10px;
   margin-top: 120px;
 }
 
@@ -88,7 +88,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  padding: 125px 14px;
+  padding: 90px 14px;
 }
 
 .private-lesson-wrapper {
