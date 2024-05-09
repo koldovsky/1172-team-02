@@ -3,6 +3,7 @@
     display: flex;
 }
 
+
 .meet-yourself__img .meet-yourself__text {
     flex: 1;
     border: 1px solid black;
@@ -62,10 +63,29 @@
     font-weight: normal;
     line-height: 24px;
 }
+
 @media (max-width: 767px) {
     .meet-yourself{
         margin: auto;
         max-width: 1200px;
         display: block;
+    }
+}
+@media (min-width: 1233px) {
+    .meet-yourself {
+        max-height: 643.562px;
+    }
+}
+@media (min-width: 2560px) {
+    .meet-yourself {
+        max-height: 643.562px;
+    }
+    .meet-yourself__text {
+        padding-bottom: 120px;
+        padding-left: 355px;
+        padding-right: 355px;
+        padding-top: 120px;
+        max-width: 570px;
+
     }
 }
