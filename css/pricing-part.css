@@ -19,7 +19,6 @@
   font-size: 30px;
   letter-spacing: 0.6px;
   font-weight: 400;
- 
 }
 
 .pricing__description {
@@ -38,10 +37,10 @@
 .pricing__description {
   display: flex;
   align-items: flex-end;
-  justify-content: center; 
+  justify-content: center;
 }
 .classes__image {
-    height: 50px;
+  height: 50px;
 }
 .classes__section {
   padding: 24px;
@@ -58,9 +57,6 @@
 .pricing_body_wrapper {
   display: grid;
   gap: 20px;
-}
-.classes__description, .classes__list {
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
