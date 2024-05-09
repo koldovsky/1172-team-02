@@ -1,3 +1,10 @@
+:root {
+    --main-bg-color: rgb(220, 234, 253);
+    --sub-title-color: rgb(114, 118, 130);
+    --button-bg-color: #5995c5;
+    --button-hover-bg-color: #2f3547;
+}
+
 .join-us__main_section {
     position: relative;
     padding: 50px;
@@ -8,7 +15,7 @@
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    background-color: rgb(220, 234, 253);
+    background-color: var(--main-bg-color);
     text-align: center;
     font-weight: 80%;
 }
@@ -26,7 +33,7 @@
 }
 
 .join-us__sub-title {
-    color: rgb(114, 118, 130);
+    color: var(--sub-title-color);
     margin-bottom: 20px;
     font-size: 20px;
 }
@@ -37,20 +44,19 @@
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #5995c5;
+    background-color: var(--button-bg-color);
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
     position: relative;
     width: 20%;
     height: 15%;
-    transition: inherit;
     cursor: pointer;
     border: none;
 }
 
 .join-us__button:hover {
-    background-color: #2f3547;
+    background-color: var(--button-hover-bg-color);
 }
 
 @media screen and (max-width: 768px) {

@@ -1,13 +1,23 @@
+:root {
+    --primary-color: #5995c5;
+    --secondary-color: rgb(5, 9, 27);
+    --tertiary-color: rgba(47, 53, 71, 0.71);
+    --quaternary-color: rgb(134, 139, 155);
+    --button-background: #5995c5;
+    --button-hover-background: #2f3547;
+    --background-color: #f8f8f8;
+}
+
 .training__section {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #f8f8f8;
+    background-color: var(--background-color);
 }
 
 .training__section_title {
     margin-top: 30px;
-    color: #5995c5;
+    color: var(--primary-color);
     word-wrap: break-word;
     font-family: sans-serif;
     font-size: 20px;
@@ -20,17 +30,17 @@
 
 .training__title {
     margin-top: 20px;
-    color: rgb(5, 9, 27);
+    color: var(--secondary-color);
     font-size: 30px;
 }
 
 .training__sub-title {
-    color: rgba(47, 53, 71, 0.71);
+    color: var(--tertiary-color);
 }
 
 .training__description {
     word-wrap: break-word;
-    color: rgb(134, 139, 155);
+    color: var(--quaternary-color);
     margin-top: 20px;
 }
 
@@ -38,7 +48,7 @@
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #5995c5;
+    background-color: var(--button-background);
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -48,7 +58,7 @@
 }
 
 .training__button:hover {
-    background-color: #2f3547;
+    background-color: var(--button-hover-background);
 }
 
 .training_image {
